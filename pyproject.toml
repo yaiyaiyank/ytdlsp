@@ -1,7 +1,17 @@
 [project]
 name = "ytdlsp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "path-utils-module",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
+
+[tool.uv.sources]
+path-utils-module = { git = "https://github.com/yaiyaiyank/path-utils-module" }
